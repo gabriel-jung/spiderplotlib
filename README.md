@@ -2,12 +2,16 @@
 
 **Simple spider/radar plots for Python with matplotlib.**
 
+![Example Spider Plot](https://raw.githubusercontent.com/gabriel-jung/spiderplotlib/main/example.png)
+
 ## Installation (using PyPI)
+
 ```bash
 pip install spiderplotlib
 ```
 
 ## Development (using uv)
+
 ```bash
 git clone https://github.com/gabriel-jung/spiderplotlib
 cd spiderplotlib
@@ -33,9 +37,11 @@ fig = spider_plot(
     labels=labels,
     title='Algorithm Comparison',
     group_names=['RF', 'XGBoost']
+    
 )
 
 plt.show()
+```
 
 ## API Reference
 
@@ -61,7 +67,7 @@ spider_plot(
 
 **Parameters:**
 
-- `groups`:  List of groups to compare (each contains values for all axes)
+- `groups`: List of groups to compare (each contains values for all axes)
 - `labels`: List of strings representing axis/parameter labels.
 - `group_names`: Optional list of labels for each group (displayed in legend).
 - `group_colors`: Optional list of colors for each group.
@@ -105,4 +111,3 @@ fig = spider_plot(
 ## Examples
 
 See `example.py` for complete working examples and `example.ipynb` for comprehensive exploration of features.
-
